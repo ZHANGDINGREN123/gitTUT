@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{#展示字典与列表的内容#}
+{#    {% for k, v in user.items() %}#}
+{#        <p>{{ k }}:{{ v }}</p>#}
+{#    {% endfor %}#}
+{#    {% for website in websites %}#}
+{#        <p>{{ website }}</p>#}
+{#    {% endfor %}#}
+<table>
+    <thead>
+        {# 设定三列的列名#}
+        <th>书名</th>
+        <th>作者</th>
+        <th>价格</th>
+    </thead>
+    <tbody>
+        {% for book in books %}
+            {# 一个tr标签表示一行#}
+            <tr>
+                {# {{  }}：中间只能存放变量#}
+                <td>{{ book.name }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.price }}</td>
+            </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+
+</body>
+</html>

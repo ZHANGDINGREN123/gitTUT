@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jinja2_model/extends_block/.idea/extends_block.iml" filepath="$PROJECT_DIR$/jinja2_model/extends_block/.idea/extends_block.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jinja2_model/filiter_demo/.idea/filiter_demo.iml" filepath="$PROJECT_DIR$/jinja2_model/filiter_demo/.idea/filiter_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jinja2_model/for_statement/.idea/for_statement.iml" filepath="$PROJECT_DIR$/jinja2_model/for_statement/.idea/for_statement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/gitTUT.iml" filepath="$PROJECT_DIR$/.idea/gitTUT.iml" />
+    </modules>
+  </component>
+</project>

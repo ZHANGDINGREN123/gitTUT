@@ -1,0 +1,45 @@
+{# 可以把一些公共代码写入父模板base.html中.以避免重复写代码 #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        .nav{
+            {#   设置网站上栏背景颜色和高度   #}
+            background: #3a3a3a;
+            height: 65px;
+        }
+        ul{
+            {#   清除浮动    #}
+            overflow: hidden;
+
+        }
+        ul li{
+            {#     float: left：行显示     list-style: none：去掉小黑点    padding:上下边距0，左右边距 10px
+            line-height: 65px
+            #}
+            float: left;
+            list-style: none;
+            padding: 0 10px;
+            line-height: 65px;
+        }
+        ul li a{
+            color: white;
+        }
+    </style>
+    {% block head %}{% endblock %}
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">发布问答</a></li>
+    </ul>
+</div>
+
+{# 父类base.html为子类index.html与login.html预留接口，以便实现与基类不同部分的功能 #}
+{% block main %}{% endblock %}
+
+</body>
+</html>

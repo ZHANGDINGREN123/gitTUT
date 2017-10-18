@@ -1,3 +1,4 @@
+#coding=utf-8
 #static文件夹存放.ccs .js .img文件
 #tempalates文件夹存放.html文件
 from flask import Flask,render_template
