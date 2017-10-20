@@ -19,7 +19,7 @@ def index():
     ]
     return render_template('index.html',
                            # 未能实现
-                           avatar = 'http://avatar.csdn.net/7/0/9/1_qq_33852877.jpg',
+                           # avatar = 'http://cn.technode.com/files/2017/05/22.jpg',
                            comments = comments)
 
 

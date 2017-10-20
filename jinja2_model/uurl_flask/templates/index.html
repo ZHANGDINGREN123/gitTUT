@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    {# link到css静态文件与js静态文件
+    有服务器可以按照下方法写
+    flask会从'static'文件夹中开始寻找，所以不需要再写'static'这个路径#}
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+</head>
+<body>
+{# 设置登录为超链接，超链接到'login.html'，由于未设置服务器，所以按照1方式无法跳转，
+2方式则可以跳转成功(超链接到"http://127.0.0.1:5000/login/")
+3方式也可以成功(因为都在使用127.0.0.1的5000端口，即在同一域名下，所以可以忽略)
+4方式则利用url反转：url_for('login'),其中参数'login'为视图函数#}
+<a href="login.html">登录(1方式)</a>
+<a href="http://127.0.0.1:5000/login/">登录(2方式)</a>
+<a href="/login/">登录(方式3)</a>
+<a href="{{ url_for('login') }}">登录(方式4)</a>
+
+{# 可以导入图片静态文件 #}
+<img src="{{ url_for('static', filename='images/1_dayday123456.jpg') }}" alt="">
+</body>
+</html>

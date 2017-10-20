@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SQLAlchemy/db_demo1/.idea/db_demo1.iml" filepath="$PROJECT_DIR$/SQLAlchemy/db_demo1/.idea/db_demo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/jinja2_model/extends_block/.idea/extends_block.iml" filepath="$PROJECT_DIR$/jinja2_model/extends_block/.idea/extends_block.iml" />
       <module fileurl="file://$PROJECT_DIR$/jinja2_model/filiter_demo/.idea/filiter_demo.iml" filepath="$PROJECT_DIR$/jinja2_model/filiter_demo/.idea/filiter_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/jinja2_model/for_statement/.idea/for_statement.iml" filepath="$PROJECT_DIR$/jinja2_model/for_statement/.idea/for_statement.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/gitTUT.iml" filepath="$PROJECT_DIR$/.idea/gitTUT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jinja2_model/uurl_flask/.idea/uurl_flask.iml" filepath="$PROJECT_DIR$/jinja2_model/uurl_flask/.idea/uurl_flask.iml" />
     </modules>
   </component>
 </project>

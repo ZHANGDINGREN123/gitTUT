@@ -4,16 +4,14 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="for_statement" />
-    <orderEntry type="module" module-name="filiter_demo" />
-    <orderEntry type="module" module-name="extends_block" />
-    <orderEntry type="module" module-name="uurl_flask" />
-    <orderEntry type="module" module-name="db_demo1" />
+    <orderEntry type="module" module-name="db_demo2" />
+    <orderEntry type="module" module-name="db_demo3" />
+    <orderEntry type="module" module-name="db_demo4" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/jinja2_model/tempalate01/templates" />
+        <option value="$MODULE_DIR$/db_demo1/templates" />
       </list>
     </option>
   </component>
