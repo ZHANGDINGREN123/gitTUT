@@ -3,10 +3,14 @@
 from flask import Flask,session
 import config
 import os
+from datetime import timedelta
 
 app = Flask(__name__)
 
-# 9行（app.config['SECRET_KEY'] = 'xxx'）与10行（app.config.from_object(config)）代码作用相同
+# 设置session过期时间为7天
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(days=7)
+
+# 14行（app.config['SECRET_KEY'] = 'xxx'）与15行（app.config.from_object(config)）代码作用相同
 # app.config['SECRET_KEY'] = '24个字符的字符串'
 # app.config.from_object(config)
 print os.urandom(24)
@@ -24,7 +28,9 @@ app.config['SECRET_KEY'] = 'abc' #对应30行注释，把盐写死，这样即�
 @app.route('/')
 def hello_world():
     session['username'] = 'zhiliao'
-
+    # 如果没有指定session的过期时间，那么默认是浏览器关闭后就自动结束
+    # session.permanent = True：默认设置过期时间为31天，第11行设置时间后，过期时间变为7天
+    session.permanent = True
     return 'Hello World!'
 
 # 通过session获取用户名,没重新执行一遍服务器,盐都会发生改变，所以需要把盐写死。
@@ -40,6 +46,7 @@ def delete():
     print session.get('username')
     return 'success'
 
+# 清楚session
 @app.route('/clear/')
 def clear():
     print session.get('username')
@@ -48,4 +55,4 @@ def clear():
     return 'successful'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
