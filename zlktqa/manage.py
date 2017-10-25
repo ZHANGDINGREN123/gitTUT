@@ -3,6 +3,7 @@ from flask_script import Manager
 from flask_migrate import Migrate,MigrateCommand
 from exts import db
 from zlktqa import app
+from models import User,Question,Answer #循环引用中的引用模型操作
 
 # 专门用来些写各种命令(终端db init ),以及数据迁移
 
